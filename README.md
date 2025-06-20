@@ -1,13 +1,13 @@
 # Prova S206 – Qualidade de Software
 
-Repositório contendo os testes de API (Postman) e Interface (Cypress) realizados individualmente.
+Este repositório contém os artefatos desenvolvidos para a Prova S206 da disciplina de Qualidade de Software, com foco em testes automatizados utilizando **Postman/Newman** e **Cypress/Mochawesome**.
 
-## 📦 Parte 1 – Testes com Postman (API)
+---
 
-- API utilizada: [https://reqres.in](https://reqres.in)
-- 3 cenários de teste, incluindo 1 negativo
-- Relatório gerado via `newman`
+## 🧪 Parte 1 – Testes com Postman
 
-### Executar testes Postman:
+- **Coleção utilizada:** `postman/Prova_S206_Reqres.postman_collection.json`
+- **Execução via CLI:**
+
 ```bash
-newman run postman/reqres_collection.postman_collection.json -r cli,html --reporter-html-export postman/newman-report.html
+npm run test:postman

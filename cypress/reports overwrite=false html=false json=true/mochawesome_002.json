@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-20T01:49:31.787Z",
+    "end": "2025-06-20T01:49:34.432Z",
+    "duration": 2645,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "922266c3-d7a3-453e-8622-d84f776ceff5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\saucedemo.cy.js",
+      "file": "cypress\\e2e\\saucedemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a863150a-90e2-4627-84c2-4e8b4f645285",
+          "title": "Login no SauceDemo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve acessar a página de login e verificar o título",
+              "fullTitle": "Login no SauceDemo Deve acessar a página de login e verificar o título",
+              "timedOut": null,
+              "duration": 1156,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.title().should('include', 'Swag Labs');",
+              "err": {},
+              "uuid": "f2c90a8e-37a4-4957-824b-a6f38a6279a0",
+              "parentUUID": "a863150a-90e2-4627-84c2-4e8b4f645285",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f2c90a8e-37a4-4957-824b-a6f38a6279a0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1156,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports overwrite=false html=false json=true",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

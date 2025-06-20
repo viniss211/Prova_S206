@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-20T01:57:56.617Z",
+    "end": "2025-06-20T01:57:58.684Z",
+    "duration": 2067,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06bbb6bd-fbc2-4c07-a04f-3528a18cbd6c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginRedirect.cy.js",
+      "file": "cypress\\e2e\\loginRedirect.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "79bf367d-92c9-4a35-b382-d1afe0be4024",
+          "title": "Login e redirecionamento no SauceDemo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve fazer login e ser redirecionado para /inventory",
+              "fullTitle": "Login e redirecionamento no SauceDemo Deve fazer login e ser redirecionado para /inventory",
+              "timedOut": null,
+              "duration": 1016,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"password\"]').type('secret_sauce');\ncy.get('[data-test=\"login-button\"]').click();\ncy.url().should('include', '/inventory.html');",
+              "err": {},
+              "uuid": "83e43f44-c761-42f4-8575-252c31a17cbb",
+              "parentUUID": "79bf367d-92c9-4a35-b382-d1afe0be4024",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83e43f44-c761-42f4-8575-252c31a17cbb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1016,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
